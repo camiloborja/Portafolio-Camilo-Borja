@@ -1,5 +1,5 @@
 html{
-    font-size: 16px;
+    font-size: 18px;
     box-sizing: border-box;
     scroll-behavior: smooth;
 
@@ -9,7 +9,7 @@ html{
 }
 body{
     margin: 0px;
-    font-family: 'Arima', cursive;;
+    font-family:Roboto, sans-serif;
     background-color: #010403;
     color: #a9a9a9;
 }
@@ -43,7 +43,6 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('https://blog.socialab.com/wp-content/uploads/2016/12/fondos-tramas-web3.png');
 }
 .hero_img{
     height: 250px;
@@ -60,33 +59,158 @@ img{
 
 }
 .hero_subtittle{
-    color: #fff;
-    font-size: clamp(16px, 5vw, 50px); 
-    margin: 1rem 0 0;
+    font-size: 40px;
 }
 .hero_tittle{
-    font-size: clamp(12px, 2vw, 40px);  
+
+    color: #fff;
+    font-size: 50px;
+    margin: 1rem 0 0;
 }
+.hero_social{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem 20px;
+}
+.hero_social i{
+    font-size: 40px;
+    color: #a9a9a9;
+    transition: all 0.5s ease-out;
+}
+.hero_social i:hover{
+    color: #fff;
+}
+
 .wrapper{
     max-width: 1024px;
     margin: 0 auto;
 }
 h3{
     color: #fff;
-    font-size: 40px;
+    font-size: 45px;
 }
 .aboutme{
     padding: 5rem 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .aboutme p{
     text-align: center;
 }
 .skills{
-    padding: 0 20px;
+    padding: 5rem 20px;
+}
+.center__tittle{
+    display: flex;
+    justify-content: center;
+}
+.skills_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.skills__items{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
+}
+.skills__items i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #1c1616;
+    color: #fff;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills__items span{
+    color: #fff;
+}
+.experience{
+    padding: 5rem 20px;
+    align-items: center;
+}
+.first__experience{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 390px 0 0;
+}
+.first__experience p{
+    margin: 0;
+}
+.corporation{
+    display: flex;
+    flex-direction: column;
+
+}
+.position{
+    color: #fff;
+}
+.portafolio{
+    padding: 5rem 20px;
+}
+.Porta__container{
+    display: flex;
+}
+.img__porta{
+    height: 350px;
+    width: 350px;
+}
+
+@media screen and (max-width: 480px){
+    html{
+        font-size: 16px;
+    }
+    .hero_img{
+        height: 170px;
+        width: 170px;
+    }
+    .hero_subtittle{
+        font-size: 25px;
+    }
+    .hero_tittle{
+        color: #fff;
+        font-size: 40px;
+        margin: 1rem 0 0;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .skills__items i{
+        width: 80px;
+        height: 80pxx;
+        border-radius: 50%;
+        background-color: #1c1616;
+        color: #fff;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .center__tittle{
+        display: flex;
+        justify-content: center;
+    }
+    .center__tittle{
+        display: flex;
+        justify-content:flex-start;
+    }
+    .first__experience{
+        display: flex;
+        justify-content:space-between;
+        padding: 0 140px 0 0;
+        font-size: 16px;
+    }
+    .skills__items span{
+        font-size: 16px;
+    }
+
+
+
+
 }
