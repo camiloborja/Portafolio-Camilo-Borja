@@ -109,7 +109,7 @@ h3{
     font-size: 45px;
 }
 .aboutme{
-    padding: 5rem 20px;
+    padding: 3rem 20px;
     display: flex;
     flex-direction: column;
 }
@@ -295,11 +295,11 @@ h3{
         width: 170px;
     }
     .hero_subtittle{
-        font-size: clamp(20px, 2vw, 25px);
+        font-size: clamp(20px, 2.5vw, 25px);
     }
     .hero_tittle{
         color: #fff;
-        font-size: clamp(35px, 2vw, 40px);
+        font-size: clamp(35px, 2.5vw, 40px);
         margin: 1rem 0 0;
     }
     h3{
@@ -334,6 +334,9 @@ h3{
         display: flex;
         flex-direction: column;
         padding: 0 100px 0 0;
+    }
+    .aboutme p{
+        font-size: 16px;
     }
     .skills__items span{
         font-size: 16px;
